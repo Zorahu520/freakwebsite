@@ -6,19 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="./Apply mechanically/css/bootstrap.min.css" rel="stylesheet">
   <link rel="shortcut icon" href="Img/favicon.ico" type="image/x-icon" />
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link href='./Apply mechanically/google-maps/custom.css' rel='stylesheet' type='text/css'>
   
-  <!--沒有給網站描述時，搜尋引擎通常會自動抓網頁的前25字做為網頁內容摘要，呈現在搜尋結果上-->
-  <meta name="description" content="">
-  <script type="text/javascript" src="">
-    $(function(){
-      new google.maps.Map(document.getElementById("map_1");{
-        zoom:13;
-        center:new google.maps.LatLng(25.047755664726715, 121.51703953742981),
-      });
-      
-      
-    })
-  </script>
+  
 
 
 
@@ -67,58 +58,169 @@
     <!-- /.container-fluid -->
   </nav>
   <!-- -----------------以上是navbar-------------- -->
-
- 
-    <div data-role="content" data-position="fixed">
-      <h1>Map Lab</h1>
-      <div id="googleMap" style="width: 100%; height: 400px;"></div>
-    </div>
-
-
-    <script>
+  <hr>
+  
+  
+  <div class="wrap">
+  <div class="timeline">
+    <!--2015年的事件 -->
+    <div class="year"><h2>2015</h2>
+      <div class="evt">
+        <div class="in">
+          <span class="date">
+            <span class="day">8</span> 
+            <span class="month">Oct</span>
+          </span>
+        <h2>Title</h2>
+        <p class="data">first</p> 
+      </div>
+      </div>
       
-    </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!--footer--------------------------------------------------------------->
-
-    <div>
-      <hr class="featurette-diver">
-      <footer class="main" role="contentinfo" data-swiftype-index="false">
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>Copyright © 2016 Freak studio, Inc. ·
-          <a href="privacyPoltcy.html">PRIVACY POLICY</a> &nbsp; ·
-          <a href="privacyPoltcy.html">TERMS OF SERVICE </a> &nbsp;·
-          <a href="privacyPoltcy.html">PARENT'S GUIDE</a> &nbsp;·
-          <a href="privacyPoltcy.html">FRAUD ISSUES</a> &nbsp;·
-          <a href="privacyPoltcy.html">SAFE AND FAIR PLAY</a> &nbsp;·
-        </p>
-
-      </footer>
-
+        <div class="evt">
+        <div class="in"> 
+          <span class="date">
+            <span class="day">02</span>
+            <span class="month">Jan</span>
+          </span>
+        <h2>Title</h2>
+        <p class="data">Second</p>
+      </div>
+      </div>
     </div>
+    <!--2016年的事件 -->
+    <div class="year">
+      <h2>2016</h2>
+      <div class="evt">
+        <div class="in">
+        <span class="date">
+            <span class="day">05</span>
+            <span class="month">Dec</span>
+          </span>
+        <h2>Title</h2>
+        <p class="data">stuff</p>
+      </div>
+      </div>
+      <div class="evt">
+        <div class="in">
+         <span class="date">
+            <span class="day">04</span>
+            <span class="month">Nov</span>
+          </span>
+        <h2>Title</h2>
+        <p class="data">data</p>
+        </div>
+      </div>
+      <div class="evt">
+       <span class="date">
+            <span class="day">25</span>
+            <span class="month">Jun</span>
+          </span>
+        <div class="in">
+        <h2>Title</h2>
+        <p class="data">yup</p>
+      </div>
+      </div>
+      
+      <div class="evt">
+        <div class="in">
+         <span class="date">
+            <span class="day">04</span>
+            <span class="month">Nov</span>
+          </span>
+        <h2>Title</h2>
+        <p class="data">data</p>
+        </div>
+      </div>
+      
+      <div class="evt">
+        <div class="in">
+         <span class="date">
+            <span class="day">04</span>
+            <span class="month">Nov</span>
+          </span>
+        <h2>Title</h2>
+        <p class="data">data</p>
+        </div>
+      </div>
+      
+      <div class="evt">
+        <div class="in">
+         <span class="date">
+            <span class="day">04</span>
+            <span class="month">Nov</span>
+          </span>
+        <h2>Title</h2>
+        <p class="data">data</p>
+        </div>
+      </div>
+      
+      <div class="evt">
+        <div class="in">
+         <span class="date">
+            <span class="day">04</span>
+            <span class="month">Nov</span>
+          </span>
+        <h2>Title</h2>
+        <p class="data">data</p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+  </div>  
+</div>
+<hr>
 
-    <!-- ----------------ahout freak -------------------------------------------------------------------------->
+    <!-- ----------------google map的div-------------- -->
+    <div id="map"></div>
+
+  </div>
 
 
-    <script src="./Apply mechanically/js/jquery.js"></script>
-    <script src="./Apply mechanically/js/bootstrap.min.js"></script>
-   
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--footer--------------------------------------------------------------->
+
+  <div>
+    <hr class="featurette-diver">
+    <footer class="main" role="contentinfo" data-swiftype-index="false">
+      <p class="pull-right"><a href="#">Back to top</a></p>
+      <p>Copyright © 2016 Freak studio, Inc. ·
+        <a href="privacyPoltcy.html">PRIVACY POLICY</a> &nbsp; ·
+        <a href="privacyPoltcy.html">TERMS OF SERVICE </a> &nbsp;·
+        <a href="privacyPoltcy.html">PARENT'S GUIDE</a> &nbsp;·
+        <a href="privacyPoltcy.html">FRAUD ISSUES</a> &nbsp;·
+        <a href="privacyPoltcy.html">SAFE AND FAIR PLAY</a> &nbsp;·
+      </p>
+
+    </footer>
+
+  </div>
+
+  <!-- ----------------ahout freak -------------------------------------------------------------------------->
+
+  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="./Apply mechanically/js/jquery.js"></script>
+  <script src="./Apply mechanically/js/bootstrap.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+  <script src="./Apply mechanically/google-maps/custom.js"></script>
+  <script src="./Apply mechanically/js/timeLine.js"></script>
 
 
 
