@@ -1,19 +1,15 @@
-$(function(){
-  $(window).scroll(function(){
-    $('.year').each(function(){
-      var year = $(this).find('h2').first().text();
-      if($(this).offset().top < $(document).scrollTop() +100){
-        $(this).find('.date').addClass('activeYear');
-           $('#dataYear').html(year);
-        }else{
-          $(this).find('.date').removeClass('activeYear');
-        }
-    });
-  });
-});
-$(document).ready(function(){
-  var year = $('.year').find('h2').first().text();
-    $('#dataYear').html(year); 
-  $('.year').first().find('.date').addClass('activeYear');
-});
+$(window).scroll(function(){				 
+	$('.container_timeLine p').each(function(){
+    	var scrollTop     = $(window).scrollTop(),
+        	elementOffset = $(this).offset().top,
+       		distance      = (elementOffset - scrollTop),
+			    windowHeight  = $(window).height(),
+			    breakPoint    = windowHeight*0.9;
 
+			if(distance > breakPoint) {
+				$(this).addClass("more-padding");	
+			}  if(distance < breakPoint) {
+				$(this).removeClass("more-padding");	
+			}
+	});
+});
