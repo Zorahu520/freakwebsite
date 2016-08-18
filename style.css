@@ -413,8 +413,8 @@ div {
   color: #ffffff;
 }
 
-
 /* 這部分是關於game的 */
 
-
-
+/* 這部分是contact us forms */
+#success_message{ display: none;}
+/* 這部分是contact us forms */

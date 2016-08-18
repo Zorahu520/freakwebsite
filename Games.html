@@ -8,7 +8,7 @@
   <link href="./Apply mechanically/css/bootstrap.min.css" rel="stylesheet">
   <link rel="shortcut icon" href="Img/favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" type="text/css" href="style.css">
-
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.3/css/bootstrapValidator.min.css">
 </head>
 
 <body>
@@ -27,34 +27,30 @@
       <!-- Collect the nav links,forms,and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li><a class="navbar-brand" href="Official%20website.html">home</a>
-
-            <li><a href="ourStory.html">Our Story</a></li>
-
-            <li class="active">
-              <a href="Games.html">Games</a></li>
+          <li><a href="Official%20website.html">home</a></li>
+          <li><a href="ourStory.html">Our Story</a></li>
+          <li class="active">
+          <a href="Games.html">Games<span class="sr-only">(current)</span></a></li>
+              
         </ul>
-        
         <ul class="nav navbar-nav navbar-right">
           <li><a href="singUp.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
           <li><a href="Login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-
         </ul>
-        </li>
-        </ul>
+      </ul>
       </div>
       <!-- /.navbar-collapse -->
     </div>
     <!-- /.container-fluid -->
   </nav>
   <!-- -----------------以上是navbar-------------- -->
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
-      
+
     </ol>
 
     <!-- Wrapper for slides -->
@@ -71,7 +67,7 @@
         <img src="Img/moon216.png" alt="moon216">
       </div>
 
-      
+
     </div>
 
     <!-- Left and right controls -->
@@ -85,7 +81,7 @@
     </a>
   </div>
   <!-- ----------------以上是carousel 遊戲宣傳圖--------------->
-
+<hr> 
 
   <div class="container">
     <div class="section-header">
@@ -189,39 +185,167 @@
 
 
       <!-- -----------------以上是 此款遊戲團隊-------------- -->
+<hr>     
+      
+      <form class="well form-horizontal" action=" " method="post" id="contact_form">
+        <fieldset>
+
+          <!-- Form Name -->
+          <legend>Want To Join Us?<br> Contact Us Now !</legend>
+
+          <!-- Text input-->
+
+          <div class="form-group">
+            <label class="col-md-4 control-label">First Name</label>
+            <div class="col-md-4 inputGroupContainer">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                <input name="first_name" placeholder="First Name" class="form-control" type="text">
+              </div>
+            </div>
+          </div>
+
+          <!-- Text input-->
+
+          <div class="form-group">
+            <label class="col-md-4 control-label">Last Name</label>
+            <div class="col-md-4 inputGroupContainer">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                <input name="last_name" placeholder="Last Name" class="form-control" type="text">
+              </div>
+            </div>
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label">E-Mail</label>
+            <div class="col-md-4 inputGroupContainer">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                <input name="email" placeholder="E-Mail Address" class="form-control" type="text">
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Text input-->
+
+          <div class="form-group">
+            <label class="col-md-4 control-label">Phone #</label>
+            <div class="col-md-4 inputGroupContainer">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                <input name="phone" placeholder="(845)555-1212" class="form-control" type="text">
+              </div>
+            </div>
+          </div>
+
+          <!-- Text input-->
+
+          <div class="form-group">
+            <label class="col-md-4 control-label">Address</label>
+            <div class="col-md-4 inputGroupContainer">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                <input name="address" placeholder="Address" class="form-control" type="text">
+              </div>
+            </div>
+          </div>
+
+          
+
+          <!-- Text input-->
+
+          <div class="form-group">
+            <label class="col-md-4 control-label">Zip Code</label>
+            <div class="col-md-4 inputGroupContainer">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                <input name="zip" placeholder="Zip Code" class="form-control" type="text">
+              </div>
+            </div>
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label">Website or Github account</label>
+            <div class="col-md-4 inputGroupContainer">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-globe"></i></span>
+                <input name="website" placeholder="Website or domain name" class="form-control" type="text">
+              </div>
+            </div>
+          </div>
+
+          
+
+          <!-- Text area -->
+
+          <div class="form-group">
+            <label class="col-md-4 control-label">Project Description</label>
+            <div class="col-md-4 inputGroupContainer">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                <textarea class="form-control" name="comment" placeholder="Project Description"></textarea>
+              </div>
+            </div>
+          </div>
+
+          <!-- Success message -->
+          <div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting us, we will get back to you shortly.</div>
+
+          <!-- Button -->
+          <div class="form-group">
+            <label class="col-md-4 control-label"></label>
+            <div class="col-md-4">
+              <button type="submit" class="btn btn-warning">Send <span class="glyphicon glyphicon-send"></span></button>
+            </div>
+          </div>
+
+        </fieldset>
+      </form>
+    </div>
+<!-- -----------------以上是 contact us-------------- -->
+      
 
 
 
-      <!--footer--------------------------------------------------------------->
-
-
-
-      <div>
-        <hr class="featurette-diver">
-        <footer class="main" role="contentinfo" data-swiftype-index="false">
-          <p class="pull-right"><a href="#">Back to top</a></p>
-          <p>Copyright © 2016 Freak studio, Inc. ·
-            <a href="privacyPoltcy.html">PRIVACY POLICY</a> &nbsp; ·
-            <a href="privacyPoltcy.html">TERMS OF SERVICE </a> &nbsp;·
-            <a href="privacyPoltcy.html">PARENT'S GUIDE</a> &nbsp;·
-            <a href="privacyPoltcy.html">FRAUD ISSUES</a> &nbsp;·
-            <a href="privacyPoltcy.html">SAFE AND FAIR PLAY</a> &nbsp;·
-          </p>
-
-        </footer>
-
-      </div>
 
 
 
 
-      <!-- ----------------ahout our -------------------------------------------------------------------------->
+
+    <!--footer--------------------------------------------------------------->
 
 
-      <script src="./Apply mechanically/js/jquery.js"></script>
-      <script src="./Apply mechanically/js/bootstrap.min.js"></script>
+
+    <div>
+      <hr class="featurette-diver">
+      <footer class="main" role="contentinfo" data-swiftype-index="false">
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>Copyright © 2016 Freak studio, Inc. ·
+          <a href="privacyPoltcy.html">PRIVACY POLICY</a> &nbsp; ·
+          <a href="privacyPoltcy.html">TERMS OF SERVICE </a> &nbsp;·
+          <a href="privacyPoltcy.html">PARENT'S GUIDE</a> &nbsp;·
+          <a href="privacyPoltcy.html">FRAUD ISSUES</a> &nbsp;·
+          <a href="privacyPoltcy.html">SAFE AND FAIR PLAY</a> &nbsp;·
+        </p>
+
+      </footer>
+
+    </div>
 
 
+
+
+    <!-- ----------------ahout our -------------------------------------------------------------------------->
+
+
+    <script src="./Apply mechanically/js/jquery.js"></script>
+    <script src="./Apply mechanically/js/bootstrap.min.js"></script>
+    <script src="./Apply mechanically/js/contactUs.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.3/js/bootstrapValidator.js"></script>
 </body>
 
 </html>
