@@ -28,6 +28,7 @@ h1 {
 	display:block;
 	width:45%;
 	padding:1% 2%;
+	
 }
 .left-content p {
 	margin:150px 0 0;
@@ -478,9 +479,7 @@ div {
 
 /* 這部分是關於game的 */
 
-/* 這部分是contact us forms */
-#success_message{ display: none;}
-/* 這部分是contact us forms */
+
 
 
 
