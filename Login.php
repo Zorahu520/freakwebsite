@@ -1,3 +1,39 @@
+<?php 
+
+if (isset($_COOKIE["form-username"]))
+  $sUserName = $_COOKIE["form-username"];
+else 
+  $sUserName = "Guest";
+  
+if (isset($_GET["logout"]))
+{
+	setcookie("form-username", "Guest", time() - 3600);
+	header("Location: Login.php");
+	exit();
+}
+
+
+
+if (isset($_POST["btnOK"]))
+{
+	$sUserName = $_POST["form-username"];
+	if (trim($sUserName) != "")
+	{
+		setcookie("form-username", $sUserName);
+		if (isset($_COOKIE["lastPage"]))
+		  header(sprintf("Location: %s", $_COOKIE["lastPage"]));
+		else
+		   header("Location: Games.html");
+		exit();
+	}
+	
+}
+
+?>
+
+
+
+
 <html>
 
 <head>
@@ -45,8 +81,13 @@
         </ul>
         
         <ul class="nav navbar-nav navbar-right">
-           <li><a href="singUp.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        	<?php if ($sUserName == "Guest"): ?>
            <li class="active"><a href="Login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          <?php else: ?>
+          <li><a href=""><span class="glyphicon glyphicon-user"></span> Sign Out</a></li>
+          <?php endif; ?>
+          |
+          <li><a href="singUp.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
         </ul>
         </ul>
       </div>
@@ -88,7 +129,7 @@
 								</div>
 							</div>
 							<div class="form-bottom">
-								<form role="form" action="" method="post" class="login-form">
+								<form role="form" action="Login.php" method="post" class="login-form">
 									<div class="form-group">
 										<label class="sr-only" for="form-username">Username</label>
 										<input type="text" name="form-username" placeholder="Username..." class="form-username form-control" id="form-username">
@@ -97,7 +138,7 @@
 										<label class="sr-only" for="form-password">Password</label>
 										<input type="password" name="form-password" placeholder="Password..." class="form-password form-control" id="form-password">
 									</div>
-									<button type="submit" class="btn">Sign in!</button>
+									<button type="submit" class="btn" name="btnOk">Sign in!</button>
 								</form>
 							</div>
 						</div>
