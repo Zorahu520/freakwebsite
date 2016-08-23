@@ -39,17 +39,17 @@
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
           <li><a href="Official%20website.html" style="background-image:url(Img/smallHome.png);width:78px;height:48px"></a></li>
+              
           <li><a href="ourStory.html">Our Story</a></li> 
           <li><a href="Games.html" >Games</a></li>
           <li><a href="terms.html">Terms</a></li>
         </ul>
         
-        <ul class="nav navbar-nav navbar-right">
-           <li class="active"><a href="singUp.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <ul class="nav navbar-nav navbar-right" >
+           <li class="active" ><a href="doLogout.php"><span class="glyphicon glyphicon-log-in"></span> Login out</a></li>
            
         </ul>
-          
-       </ul>
+        </ul>
       </div>
       <!-- /.navbar-collapse -->
     </div>
@@ -67,52 +67,21 @@
 						<h1><strong>Please</strong> Login or Register </h1>
 						<div class="description">
 							<p>
-								如未註冊請填寫表單註冊帳戶。<br>
-								或使用其他社群連結登入。
+							  成功登入會員<br>
 							</p>
 						</div>
 					</div>
 				</div>
 
-				
+				<div class="row">
+					<div class="col-sm-5">
 
-  
+						
+							
+
+						
+
 					
-
-					<div class="col-sm-5" >
-
-						<div class="form-box" >
-							<div class="form-top">
-								<div class="form-top-left">
-									<h3>Sign up now</h3>
-									<p>Fill in the form below to get instant access:</p>
-								</div>
-								<div class="form-top-right">
-									<i class="fa fa-pencil"></i>
-								</div>
-							</div>
-							<div class="form-bottom">
-								<form role="form" action="register_finish.php" method="post" class="registration-form">
-									<div class="form-group">
-										<label class="sr-only" for="form-username">Username</label>
-										<input type="text" name="username" placeholder="Username..." class="form-first-name form-control" id="form-username">
-									</div>
-									<div class="form-group">
-										<label class="sr-only" for="form-password">Password</label>
-										<input type="password" name="password" placeholder="Password..." class="form-last-name form-control" id="form-password">
-									</div>
-									<div class="form-group">
-										<label class="sr-only" for="form-email">Email</label>
-										<input type="text" name="email" placeholder="Email..." class="form-email form-control" id="form-email">
-									</div>
-									<div class="form-group">
-										<label class="sr-only" for="form-about-yourself">About yourself</label>
-										<textarea name="about-yourself" placeholder="About yourself..." class="form-about-yourself form-control" id="form-about-yourself"></textarea>
-									</div>
-									<button type="submit" class="btn">Sign me up!</button>
-								</form>
-							</div>
-						</div>
 
 					</div>
 				</div>

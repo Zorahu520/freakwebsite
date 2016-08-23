@@ -112,6 +112,7 @@ img { max-width: 100%; }
 
 .form-box {
 	margin-top: 70px;
+	
 }
 
 .form-top {
@@ -121,6 +122,7 @@ img { max-width: 100%; }
 	background: rgba(0, 0, 0, 0.35);
 	-moz-border-radius: 4px 4px 0 0; -webkit-border-radius: 4px 4px 0 0; border-radius: 4px 4px 0 0;
 	text-align: left;
+	
 }
 
 .form-top-left {
@@ -139,7 +141,7 @@ img { max-width: 100%; }
 	font-size: 66px;
 	color: #fff;
 	line-height: 100px;
-	text-align: right;
+	text-align: center;
 	opacity: 0.3;
 }
 
