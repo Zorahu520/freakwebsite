@@ -95,19 +95,19 @@
 								<form role="form" action="register_finish.php" method="post" class="registration-form">
 									<div class="form-group">
 										<label class="sr-only" for="form-username">Username</label>
-										<input type="text" name="username" placeholder="Username..." class="form-first-name form-control" id="form-username">
+										<input type="text" name="form-username" placeholder="Username..." class="form-first-name form-control" id="form-username">
 									</div>
 									<div class="form-group">
 										<label class="sr-only" for="form-password">Password</label>
-										<input type="password" name="password" placeholder="Password..." class="form-last-name form-control" id="form-password">
+										<input type="password" name="form-password" placeholder="Password..." class="form-last-name form-control" id="form-password">
 									</div>
 									<div class="form-group">
 										<label class="sr-only" for="form-email">Email</label>
-										<input type="text" name="email" placeholder="Email..." class="form-email form-control" id="form-email">
+										<input type="text" name="email" placeholder="Email..." class="form-email form-control" id="email">
 									</div>
 									<div class="form-group">
 										<label class="sr-only" for="form-about-yourself">About yourself</label>
-										<textarea name="about-yourself" placeholder="About yourself..." class="form-about-yourself form-control" id="form-about-yourself"></textarea>
+										<textarea name="about-yourself" placeholder="About yourself..." class="form-about-yourself form-control" id="about-yourself"></textarea>
 									</div>
 									<button type="submit" class="btn">Sign me up!</button>
 								</form>

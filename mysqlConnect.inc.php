@@ -4,7 +4,7 @@
 //資料庫位置
 $db_server = "localhost";
 //資料庫名稱
-$db_name = "member";
+$db_name = "test";
 //資料庫管理者帳號
 $db_user = "root";
 //資料庫管理者密碼

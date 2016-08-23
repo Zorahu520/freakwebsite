@@ -1,11 +1,12 @@
 <?php session_start(); ?>
+<!--上方語法為啟用session，此語法要放在網頁最前方-->
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <?php
 //連接資料庫
 //只要此頁面上有用到連接MySQL就要include它
-include("mysql_connect.inc.php");
-$id = $_POST['username'];
-$pw = $_POST['password'];
+include("mysqlConnect.inc.php");
+$id = $_POST['form-username'];
+$pw = $_POST['form-password'];
 
 //搜尋資料庫資料
 $sql = "SELECT * FROM member where username = '$id'";
@@ -17,15 +18,13 @@ $row = @mysql_fetch_row($result);
 if($id != null && $pw != null && $row[1] == $id && $row[2] == $pw)
 {
         //將帳號寫入session，方便驗證使用者身份
-        $_SESSION['username'] = $id;
-        echo '<h3>登入成功!</h3>';
-        echo '<meta http-equiv=REFRESH CONTENT=1;url=terms.html>';
+        $_SESSION['form-username'] = $id;
+        echo '登入成功!';
+        echo '<meta http-equiv=REFRESH CONTENT=1;url=Loginout.php>';
 }
 else
 {
-        echo '<h3>登入失敗!</h3>';
-        echo '<meta http-equiv=REFRESH CONTENT=1;url=singUp.php>';
+        echo '登入失敗!';
+        echo '<meta http-equiv=REFRESH CONTENT=1;url=Official%20website.html>';
 }
-
 ?>
-  

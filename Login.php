@@ -91,14 +91,14 @@
 								</div>
 							</div>
 							<div class="form-bottom">
-								<form role="form"  method="post" class="login-form" action="connect.php">
+								<form role="form" action="connect.php" method="post" class="login-form">
 									<div class="form-group">
-										<label class="sr-only" for="username">Username</label>
-										<input type="text" name="username" placeholder="Username..." class="form-username form-control" id="form-username">
+										<label class="sr-only" for="form-username">Username</label>
+										<input type="text" name="form-username" placeholder="Username..." class="form-username form-control" id="form-username">
 									</div>
 									<div class="form-group">
-										<label class="sr-only" for="password">Password</label>
-										<input type="password" name="password" placeholder="Password..." class="form-password form-control" id="form-password">
+										<label class="sr-only" for="form-password">Password</label>
+										<input type="password" name="form-password" placeholder="Password..." class="form-password form-control" id="form-password">
 									</div>
 									<button type="submit" class="btn" name="btnOk">Sign in!</button>
 								</form>
@@ -123,9 +123,6 @@
 					</div>
 
 					
-
-					</div>
-				</div>
 
 			</div>
 		</div>

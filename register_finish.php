@@ -1,10 +1,10 @@
 <?php session_start(); ?>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <?php
-include("mysql_connect.inc.php");
+include("mysqlConnect.inc.php");
 
-$id = $_POST['username'];
-$pw = $_POST['password'];
+$id = $_POST['form-username'];
+$pw = $_POST['form-password'];
 $address = $_POST['email'];
 $other = $_POST['about-yourself'];
 
@@ -14,16 +14,16 @@ $other = $_POST['about-yourself'];
 $sql = "SELECT * FROM member where username = '$id'";
 $result = mysql_query($sql);
 $row = @mysql_fetch_row($result);
-if ( $row[username] == $id)
+if ( $row[1] == $id)
 {
 	echo '帳號重複，請洽管理員';
-	echo '<meta http-equiv=REFRESH CONTENT=2;url=index.php>';	
+	echo '<meta http-equiv=REFRESH CONTENT=2;url=terms.html>';	
 }
 
 elseif($id != null && $pw != null)
 {
         //新增資料進資料庫語法
-         $sql = "insert into ID (username, password, address, other) values ('$id', '$pw', '$address', '$other')";
+         $sql = "insert into member (username, password, address, other) values ('$id', '$pw', '$address', '$other')";
         if(mysql_query($sql))
         {
                 echo '新增成功!';
