@@ -38,7 +38,7 @@
       <!-- Collect the nav links,forms,and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li><a href="Official%20website.html" style="background-image:url(Img/smallHome.png);width:78px;height:48px"></a></li>
+          <li><a href="index.html" style="background-image:url(Img/smallHome.png);width:78px;height:48px"></a></li>
           <li><a href="ourStory.html">Our Story</a></li> 
           <li><a href="Games.html" >Games</a></li>
           <li><a href="terms.html">Terms</a></li>
