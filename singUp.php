@@ -74,13 +74,8 @@
 					</div>
 				</div>
 
-				
-
-  
-					
-
+				<!-- Account Registration Form -->
 					<div class="col-sm-5" >
-
 						<div class="form-box" >
 							<div class="form-top">
 								<div class="form-top-left">
@@ -113,7 +108,7 @@
 								</form>
 							</div>
 						</div>
-
+					<!-- Account Registration Form -->
 					</div>
 				</div>
 
@@ -129,6 +124,7 @@
 
 				<div class="col-sm-8 col-sm-offset-2">
 					<div class="footer-border"></div>
+					<!-- Copyright Notices & Studio facebook link-->
 					<p>Copyright © 2016 <a href="https://www.facebook.com/Createfreak/" target="_blank"><strong>Freak studio</strong></a> , Inc. <i class="fa fa-smile-o"></i></p>
 				</div>
 

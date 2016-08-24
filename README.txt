@@ -11,7 +11,7 @@
  --------------------
  bootstraps google map template教學範例:http://bootstrapious.com/p/google-maps-and-bootstrap-tutorial
  
- 
+ Parallax.js(輕量級視差引擎)教學範例:https://github.com/wagerfield/parallax
  
  紀錄網頁需要圖片大小：
  首頁四張圖1920x800

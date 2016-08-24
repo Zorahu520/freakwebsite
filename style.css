@@ -88,7 +88,7 @@ transition: all 0.7s ease-in-out;
   text-transform: uppercase;
   text-align:center;
   line-height:80px;
-    font-family: 'Oswald', sans-serif;
+  font-family: 'Oswald', sans-serif;
 }
 
 .counter-item i {

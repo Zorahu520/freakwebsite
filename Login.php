@@ -76,7 +76,7 @@
 						</div>
 					</div>
 				</div>
-
+				<!-- Member Login Form -->
 				<div class="row">
 					<div class="col-sm-5">
 
@@ -104,7 +104,9 @@
 								</form>
 							</div>
 						</div>
-
+						<!-- Member Login Form -->
+						
+						<!-- Community tree site login link -->
 						<div class="social-login">
 							<h3>...or login with:</h3>
 							<div class="social-login-buttons">
@@ -119,7 +121,7 @@
 								</a>
 							</div>
 						</div>
-
+						<!-- Community tree site login link -->
 					</div>
 
 					
@@ -136,6 +138,7 @@
 
 				<div class="col-sm-8 col-sm-offset-2">
 					<div class="footer-border"></div>
+					<!-- Copyright Notices & Studio facebook link-->
 					<p>Copyright © 2016 <a href="https://www.facebook.com/Createfreak/" target="_blank"><strong>Freak studio</strong></a> , Inc. <i class="fa fa-smile-o"></i></p>
 				</div>
 
