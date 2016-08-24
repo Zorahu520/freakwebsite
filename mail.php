@@ -3,8 +3,6 @@
     $from = $_REQUEST['name'];
     $headers = "Content-type: text/html;From: $from";
     
-
-
     $fields = array();
     $fields["name"] = $_REQUEST['name'];
     $fields["email"] = $_REQUEST['email'];
@@ -17,11 +15,9 @@
 
     // $send = mail($to, $body, $headers);
     if(mail("$to", "$body", "$headers")):
-   echo "Your Message was sent successfully.";//寄信成功就會顯示的提示訊息
-  else:
-   echo "Your Message was not sent successfully!";//寄信失敗顯示的錯誤訊息
-  endif;
-    
-    
+    echo "Your Message was sent successfully.";//寄信成功就會顯示的提示訊息
+    else:
+    echo "Your Message was not sent successfully!";//寄信失敗顯示的錯誤訊息
+    endif;
     
 ?>
